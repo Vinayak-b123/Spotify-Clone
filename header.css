@@ -51,6 +51,13 @@ header{
 #header-search-icon{
     margin-right: 10px;
     margin-left: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#header-search-icon:hover{
+    opacity: 1;
+    transform: scale(1.03);
 }
 .search-bar-area{
     background-color: rgba(255, 255, 255, 0.147);
@@ -72,8 +79,30 @@ header{
     color: white;
     font-size: 16px;
     flex: 1;
+    z-index: 2;
+    /* cursor: text; */
 }
 
+.searchbar-hover-buttons{
+    color: rgba(255, 255, 255, 0.667);
+    position: relative;
+    right: 130px;
+    padding: 2px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.382);
+    margin: 3px;
+    border-radius: 4px;
+    display: none;
+
+}
+
+
+.search-bar-area:hover .searchbar-hover-buttons{
+    display: inline-block;
+}
+
+.search-bar:focus ~ .searchbar-hover-buttons{
+    display: none;
+}
 
 
 /* RIGHT SIDE */
@@ -100,6 +129,7 @@ header{
 
 
 .install-app{
+    font-weight: 800;
     opacity: 0.9;
     display: flex;
     justify-content: center;
@@ -142,12 +172,15 @@ header{
 
 
 .account-name{
+    background-color: rgba(183, 118, 32, 0.579);
+    color: black;
+    font-weight:800;
     margin: 5px 8px;
-    height: 32px;
-    width: 32px;
-    border: 2px solid rgba(255, 255, 255, 0.259);
+    height: 30px;
+    width: 30px;
+    /* border: 2px solid rgba(255, 255, 255, 0.15); */
     border-radius: 50%;
-    outline: 6px solid rgba(255, 255, 255, 0.259);
+    outline: 8px solid rgba(255, 255, 255, 0.15);
     cursor: pointer;
 }
 .account-name:hover{
