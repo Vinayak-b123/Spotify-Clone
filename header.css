@@ -1,0 +1,156 @@
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 48px;
+    /* margin: 1px -8px;/ */
+    padding: 3px 8px;
+    justify-content:space-between;
+    align-items: center;
+    width: 99vw;
+    /* background-color: darkblue; */
+}
+
+
+/* LEFT SIDE */
+.left-header{
+    width: 250px;
+}
+.header-icon{
+    margin-left: 20px;
+    height: 32px;
+}
+
+/* MIDDLE */
+.mid-header{
+    width: 538px;
+    display: flex;
+    align-items: center;
+}
+
+.home-button{
+    height: 32px;
+    width: 32px;
+    background-color: rgba(255, 255, 255, 0.133);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+}
+.home-button:hover{
+    transform: scale(1.05);
+}
+
+#header-home-icon, #header-search-icon{
+    height: 20px;
+}
+
+#header-search-icon{
+    margin-right: 10px;
+    margin-left: 4px;
+}
+.search-bar-area{
+    background-color: rgba(255, 255, 255, 0.147);
+    flex-grow: 1;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.search-bar-area:hover{
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.04) inset;
+}
+
+.search-bar{
+    /* background-color: pink; */
+    color: white;
+    font-size: 16px;
+    flex: 1;
+}
+
+
+
+/* RIGHT SIDE */
+.right-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-header *{
+    margin: 5px;
+}
+
+.explore-premium *{
+    color: black;
+    background-color: white;
+    padding: 6px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.explore-premium:hover{
+    transform: scale(1.04);
+}
+
+
+.install-app{
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.install-app:hover{
+    opacity: 1;
+    transform: scale(1.04);
+
+}
+
+
+.install-small, .bell-icon{
+    height: 16px;
+    /* margin-right: px; */
+
+}
+
+.notifications{
+    margin-top: 7px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 36px;
+    padding: 1px;
+}
+.notifications:hover{
+    background-color: rgba(255, 255, 255, 0.29);
+    transform: scale(1.04);
+
+}
+
+.bell-icon{
+    padding: 2px;
+    margin-right: 5px;
+}
+
+
+.account-name{
+    margin: 5px 8px;
+    height: 32px;
+    width: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.259);
+    border-radius: 50%;
+    outline: 6px solid rgba(255, 255, 255, 0.259);
+    cursor: pointer;
+}
+.account-name:hover{
+    transform: scale(1.04);
+}
+
