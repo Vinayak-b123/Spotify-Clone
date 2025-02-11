@@ -31,6 +31,12 @@ header{
     align-items: center;
 }
 
+.home-button-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-button{
     height: 32px;
     width: 32px;
