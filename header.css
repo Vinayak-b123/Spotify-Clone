@@ -1,7 +1,8 @@
 header{
+    /* outline: 2px solid white; */
     display: flex;
     position: fixed;
-    top: 0;
+    top: 1px;
     left: 0;
     height: 48px;
     /* margin: 1px -8px;/ */
@@ -18,8 +19,9 @@ header{
     width: 250px;
 }
 .header-icon{
-    margin-left: 20px;
-    height: 32px;
+    padding-top: 3px;
+    margin-left: 10px;
+    height: 34px;
 }
 
 /* MIDDLE */
@@ -46,6 +48,12 @@ header{
 
 #header-home-icon, #header-search-icon{
     height: 20px;
+}
+
+.header-search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header-search-icon{
@@ -84,13 +92,15 @@ header{
 }
 
 .searchbar-hover-buttons{
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.667);
     position: relative;
-    right: 130px;
+    right: 150px;
     padding: 2px 4px;
-    border: 1px solid rgba(255, 255, 255, 0.382);
+    border: 1px solid rgba(255, 255, 255, 0.482);
     margin: 3px;
     border-radius: 4px;
+    opacity: 0.75;
     display: none;
 
 }
@@ -151,6 +161,12 @@ header{
 
 }
 
+.notif-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .notifications{
     margin-top: 7px;
     opacity: 0.8;
@@ -176,8 +192,8 @@ header{
     color: black;
     font-weight:800;
     margin: 5px 8px;
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
     /* border: 2px solid rgba(255, 255, 255, 0.15); */
     border-radius: 50%;
     outline: 8px solid rgba(255, 255, 255, 0.15);
@@ -187,3 +203,36 @@ header{
     transform: scale(1.04);
 }
 
+.hidden-name{
+    z-index: 100;
+    background-color: rgba(128, 128, 128, 0.511);
+    padding: 6px;
+    position:absolute;
+    border-radius: 4px;
+    opacity: 0.8;
+    transform: translateY(45px);
+    display: none;
+}
+
+#header-search-icon:hover ~ #hidden-search{
+    display: block;
+}
+
+.home-button:hover ~ #hidden-home{
+    display: block;
+}
+
+.notifications:hover ~ #hidden-notif{
+    display: block;
+}
+
+.account-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-name:hover ~ #hidden-account{
+    display: block;
+    right: 1px;
+}

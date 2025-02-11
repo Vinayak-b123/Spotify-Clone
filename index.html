@@ -23,12 +23,17 @@
             <button class="home-button">
                 <img src="SVGs/home.svg" alt="home" id="header-home-icon">
             </button>
+            <button class="hidden-name" id="hidden-home">Home</button>
+
             <div class="search-bar-area">
-                <img src="SVGs/Search-icon.svg" alt="*" id="header-search-icon">
+                <div class="header-search-icon">
+                    <img src="SVGs/Search-icon.svg" alt="*" id="header-search-icon">
+                    <button class="hidden-name" id="hidden-search">Search</button>
+                </div>
                 <input type="text" class="search-bar" placeholder="What do you want to play?">
                 <button class="searchbar-hover-buttons">ctrl</button>
-                <button class="searchbar-hover-buttons">+</button>
-                <button class="searchbar-hover-buttons">K</button>
+                <!-- <button class="searchbar-hover-buttons">+</button> -->
+                <button class="searchbar-hover-buttons">A</button>
 
             </div>
         </div>
@@ -39,10 +44,16 @@
                 <img src="SVGs/install.svg" alt="*" class="install-small">
                 <p class="button-p">Install App</p>
             </button>
-            <button class="notifications">
-                <img src="SVGs/bell.svg" alt="*" class="bell-icon">
-            </button>
-            <button class="account-name">V</button>
+            <div class="notif-space">
+                <button class="notifications">
+                    <img src="SVGs/bell.svg" alt="*" class="bell-icon">
+                </button>
+                <button class="hidden-name" id="hidden-notif">What's new</button>    
+            </div>
+            <div class="account-space">
+                <button class="account-name">V</button>
+                <button class="hidden-name" id="hidden-account">Accounts</button>
+            </div>
 
         </div>
     </header>
