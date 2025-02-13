@@ -1,0 +1,162 @@
+.your-library{
+    border-radius: 10px;
+    height: 80vh;
+    padding: 10px;
+    flex: 1;
+    background-color:#67676739;
+    display: flex;
+    flex-direction: column;
+}
+
+.lib-heading-area{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
+    padding: 16px;
+}
+
+.lib-img{
+    height: 32px;
+    cursor: pointer;
+}
+.lib-heading{
+    cursor: pointer;
+    display: inline;
+    flex: 1;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.lib-but{
+    height: 34px;
+    width: 34px;
+    /* background-color: grey; */
+    margin: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.lib-but:hover{
+    background-color: rgba(128, 128, 128, 0.366);
+}
+
+.lib-but-img{
+    height: 30px;
+}
+
+.lib-long-buts-area{
+    margin: 8px 16px;
+    height: 32ps;
+    display: flex;
+}
+
+.lib-long-but{
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.159);
+    margin-right: 10px;
+    box-shadow: 0 0 1px 2px rgba(128, 128, 128, 0.159);
+    cursor: pointer;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+.lib-long-but:hover {
+    opacity: 1;
+}
+
+.lib-tools{
+    margin: 8px 16px 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library-search-area {
+    display: flex;
+    align-items: center;
+}
+#lib-search {
+    margin-left: 1px;
+}
+
+.lib-but-tools-img{
+    height: 17px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.lib-but-tools-img:hover {
+    /* height: 17px; */
+    opacity: 1;
+}
+
+.recent-shit{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    font-size: 15px;
+    font-weight: 500;
+    /* letter-spacing: 200%; */
+}
+.recent-shit:hover {
+    opacity: 0.85;
+    /* transform: scale(1.005); */
+}
+
+.library-search-input{
+    opacity: 0.6;
+    display: none;
+    padding: 0px 10px;
+    width: 140px;
+    border-radius: 40px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.container-long-playlist-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.long-playlist-card{
+    padding: 8px;
+    /* padding-bottom: 2px; */
+    border-radius: 4px;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items:start;
+    gap: 12px;
+    cursor: pointer;
+}
+.long-playlist-card:hover {
+    background-color: rgba(128, 128, 128, 0.115);
+}
+
+.long-playlist-card-img-area{
+    width: 48px;
+}
+
+.album-cover-long-playlist-card{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.long-playlist-card-text-area{
+    flex: 1;
+    padding-top: 8px;
+}
+
+.long-playlist-card-title{
+    font-size: 16px;
+}
+
+.long-playlist-card-metadata{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+}

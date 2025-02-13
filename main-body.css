@@ -7,14 +7,6 @@
     
 }
 
-.your-library{
-    border-radius: 10px;
-    height: 80vh;
-    padding: 10px;
-    flex: 1;
-    background-color:#67676739;
-}
-
 main{
     flex: 3.2;
     border-radius: 10px;

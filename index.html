@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main-body.css">
+    <link rel="stylesheet" href="library.css">
 </head>
 
 <body>
@@ -25,9 +26,9 @@
                 <button class="home-button">
                     <img src="SVGs/home.svg" alt="home" id="header-home-icon">
                 </button>
-                <button class="hidden-name" id="hidden-home">Home</button>    
+                <button class="hidden-name" id="hidden-home">Home</button>
             </div>
-            
+
             <div class="search-bar-area">
                 <div class="header-search-icon">
                     <img src="SVGs/Search-icon.svg" alt="*" id="header-search-icon">
@@ -51,7 +52,7 @@
                 <button class="notifications">
                     <img src="SVGs/bell.svg" alt="*" class="bell-icon">
                 </button>
-                <button class="hidden-name" id="hidden-notif">What's new</button>    
+                <button class="hidden-name" id="hidden-notif">What's new</button>
             </div>
             <div class="account-space">
                 <button class="account-name">V</button>
@@ -61,20 +62,73 @@
         </div>
     </header>
 
-    <!-- <marquee behavior="" direction=""> Hello from the other side</marquee> -->
-     <div class="main-body">
+    <div class="main-body">
         <div class="your-library">
-            Hello
+            <div  class="lib-heading-area">
+                <img src="SVGs/library.svg" alt="lib" class="lib-img">
+                <p class="lib-heading">Your library</p>
+                <button class="lib-but" id="lib-plus">
+                    <img src="SVGs/plus.svg" alt="plus" class="lib-but-img">
+                </button>
+
+                <button class="lib-but" id="lib-right">
+                    <img src="SVGs/right.svg" alt="right" class="lib-but-img">
+                </button>
+            </div>
+
+            <div class="lib-long-buts-area">
+                <button class="lib-long-but">x</button>
+                <button class="lib-long-but">Playlists</button>
+                <button class="lib-long-but">Artists</button>
+            </div>
+
+            <div class="lib-tools">
+                <div class="library-search-area">
+                    <input type="text" class="library-search-input" placeholder="search in your library"> <!--Remember to add display inline block property in js-->
+                    <button class="lib-but" id="lib-search">
+                        <img src="SVGs/Search-icon.svg" alt="search" class="lib-but-tools-img" id="lib-search-but-img">
+                    </button>
+                </div>
+
+                <div class="recent-shit">
+                    Recent
+                    <img src="SVGs/hamburgerdots.svg" alt="dots" class="lib-but-tools-img" id="lib-hamburger-img">
+                </div>
+            </div>
+
+            <div class=container-long-playlist-card>
+                <div class="long-playlist-card">
+                    <div class="long-playlist-card-img-area">
+                        <img src="album-covers/dejaVu-PineappleExpress.jpg" alt="Pineapple Express - Deja Vu" class="album-cover-long-playlist-card">
+                    </div>
+                    <div class="long-playlist-card-text-area">
+                        <p class="long-playlist-card-title">Card Title</p>
+                        <p class="long-playlist-card-metadata">Vinayak Bhadra &#183; 100 views</p>
+                    </div>
+                </div>
+
+                <div class="long-playlist-card">
+                    <div class="long-playlist-card-img-area">
+                        <img src="album-covers/dejaVu-PineappleExpress.jpg" alt="Pineapple Express - Deja Vu" class="album-cover-long-playlist-card">
+                        </div>
+                    <div class="long-playlist-card-text-area">
+                        <p class="long-playlist-card-title">Card Title</p>
+                        <p class="long-playlist-card-metadata">Vinayak Bhadra &#183; 100 views</p>
+                    </div>
+                </div>
+
+                
+            </div>
 
         </div>
         <main>
             main
         </main>
 
-     </div>
-    
+    </div>
+
     <footer></footer>
-    
+
     <script src="script.js"></script>
 </body>
 
