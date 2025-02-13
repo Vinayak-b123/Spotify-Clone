@@ -66,6 +66,10 @@
     opacity: 1;
 }
 
+#lib-long-but-cross {
+    display: none;
+}
+
 .lib-tools{
     margin: 8px 16px 8px 8px;
     display: flex;
