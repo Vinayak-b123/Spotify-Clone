@@ -1,0 +1,9 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 98vw;
+    right: 1vw;
+    left: 1vw;
+    /* background-color: pink; */
+}

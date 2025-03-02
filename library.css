@@ -1,6 +1,6 @@
 .your-library{
     border-radius: 10px;
-    height: 80vh;
+    height: 620px;
     padding: 10px;
     flex: 1;
     background-color:#67676739;
@@ -18,10 +18,9 @@
 
 .lib-img{
     height: 32px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .lib-heading{
-    cursor: pointer;
     display: inline;
     flex: 1;
     margin-left: 10px;

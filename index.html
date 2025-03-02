@@ -9,10 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main-body.css">
     <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
@@ -121,13 +125,36 @@
             </div>
 
         </div>
-        <main>
-            main
-        </main>
 
+        <div class="main-container">
+            <div class="what-to-hear-selectors">
+                <button class="home-long-but" id="main-all-but">All</button>
+                <button class="home-long-but" id="main-music-but">Music</button>
+                <button class="home-long-but" id="main-podcast-button">Podcast</button>
+            </div>
+            <main>
+                <section class="album-card-area">
+                    <div class="album-card">
+                        <div class="image-area-album-card">
+                            <img src="album-covers/dejaVu-PineappleExpress.jpg" alt="">
+                            <button class="appear-play-button">
+                                <img src="SVGs/play-button.svg" alt="play">
+                            </button>
+                        </div>
+                        <div class="album-card-details">
+                            <p class="song-name"><a href="#">Song Name</a></p>
+                            <p class="artist-name"><a href="#">Artist Name</a></p>
+                        </div>
+                    </div>
+                                        
+                </section>
+            </main>
+        </div>
     </div>
 
-    <footer></footer>
+    <footer>
+        player
+    </footer>
 
     <script src="script.js"></script>
 </body>
