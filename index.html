@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main-body.css">
     <link rel="stylesheet" href="library.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="player.css">
 </head>
 
 <body>
@@ -152,11 +152,52 @@
         </div>
     </div>
 
-    <footer>
-        player
-    </footer>
+    <div class="player">
+        <div class="player-card">
+            <div class="player-img-area">
+                <img src="album-covers/dejaVu-PineappleExpress.jpg" alt="Pineapple Express - Deja Vu" class="album-cover-player-card">
+            </div>
+            <div class="player-card-text-area">
+                <p class="player-card-title"><a href="#">Card Title</a></p>
+                <p class="player-card-metadata"> <a href="#">Vinayak Bhadra</a> &#183; 100 views</p>
+            </div>
+            <button id="add-to-likes">
+                <img src="SVGs/plus.svg" alt="plus">
+            </button>
+        </div>
+
+        <div class="controls">
+            <div class="controls-area">
+                <img src="SVGs/shuffle.svg" alt="shuffle" id="shuffle">
+                <img src="SVGs/next.svg" alt="previous" id="previous">
+                <button id="playpause" onclick="pauseplay()">
+                    <img src="SVGs/play-button.svg" alt="play/pause">
+                </button>
+                <img src="SVGs/next.svg" alt="next" id="next">   
+                <img src="SVGs/loop.svg" alt="loop" id="loop">    
+            </div>
+
+            <div class="progress-bar">
+                <span id="currentTime">00:00</span>
+                <input type="range" name="#" id="song-progress" min="0" max="100" value="0">
+                <span id="duration">00:00</span>
+            </div>
+        </div>
+
+        <audio src="Songs/Pineapple Express - JAZBAAT ft. @ShubhamRoy.mp3" id="current-song-audio">
+        </audio>
+
+        <div class="controls2">
+            <img src="SVGs/queue.svg" alt="queue">
+            <div class="volume-area">
+                <img src="SVGs/volume.svg" alt="volume" onclick="muteOrNot()" id="volume-image">
+                <input type="range" id="volume-slider" min="0" max="100" value="80">
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
+    <script src="player.js"></script>
 </body>
 
 </html>

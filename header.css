@@ -1,9 +1,7 @@
 header{
     /* outline: 2px solid white; */
     display: flex;
-    position: fixed;
-    top: 1px;
-    left: 0;
+    margin-top: 1px;
     height: 48px;
     /* margin: 1px -8px;/ */
     padding: 3px 8px;

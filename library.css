@@ -1,6 +1,6 @@
 .your-library{
     border-radius: 10px;
-    height: 620px;
+    height: 96%;
     padding: 10px;
     flex: 1;
     background-color:#67676739;
@@ -12,7 +12,6 @@
     height: 40px;
     display: flex;
     align-items: center;
-    
     padding: 16px;
 }
 
@@ -152,7 +151,7 @@
 
 .long-playlist-card-text-area{
     flex: 1;
-    padding-top: 8px;
+    padding-top: 4px;
 }
 
 .long-playlist-card-title{
@@ -162,4 +161,17 @@
 .long-playlist-card-metadata{
     font-size: 14px;
     color: rgba(255, 255, 255, 0.4);
+}
+
+@media (width<1153px){
+    .long-playlist-card-text-area{
+        padding-top: 1px;
+    }
+
+    .long-playlist-card-title{
+        font-size: 14px;
+    }
+    .long-playlist-card-metadata{
+        font-size: 13px;
+    }
 }

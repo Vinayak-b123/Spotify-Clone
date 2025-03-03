@@ -1,15 +1,16 @@
 .main-body{
-    margin: 1vh 1vw;
-    margin-top: 58px;
+    margin: 0 1vw;
     display: flex;
     gap: 8px;
     width: 98vw; 
+    flex: 1;
+    flex-grow: 1;
 }
 
 .main-container{
     flex: 3.2;
     border-radius: 10px;
-    height: 620px;
+    height: 96%;
     padding: 10px;
     background-color:#67676739;
     display: flex;
